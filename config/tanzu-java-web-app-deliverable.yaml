@@ -1,0 +1,16 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  name: tanzu-java-web-app
+  labels:
+    app.kubernetes.io/part-of: tanzu-java-web-app
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    demo: gitops
+    app.kubernetes.io/component: deliverable
+    carto.run/workload-name: tanzu-java-web-app
+    app.tanzu.vmware.com/deliverable-type: web
+spec:
+  source:
+    image: harbor.vrabbi.cloud/tap/tanzu-java-web-app-demo-bundle:457bdad2-8706-407b-b415-8bf66f78b116
+
